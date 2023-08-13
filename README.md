@@ -8,4 +8,4 @@ PICO4でAR花火を見るために作成しました
 Package内のPICO Unity SDKってgitに上げて大丈夫なのかな🤔
 
 
-2023.08.04 v1.0完成
+2023.08.04 v1.0完成 https://drive.google.com/file/d/1RGN-Q7k3C40M6wa-h7wNVr-c-umuhAAn/view?usp=sharing
