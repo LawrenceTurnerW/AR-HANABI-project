@@ -126,7 +126,7 @@ public class MessageGet : MonoBehaviour
                                     par.startColor = Util.HexToRGB(saveData.body[0].color);
 
                                     // パーティクルの発生場所を配列から読み取って作成する。x座標のみshiftPosition分ずらす。
-                                    newParticle.transform.position = new Vector3(intList[i * 2] / 10 - width + shiftPosition, -intList[i * 2 + 1] / 10 + 40, 25);
+                                    newParticle.transform.position = new Vector3(intList[i * 2] / 10 - width + shiftPosition, -intList[i * 2 + 1] / 10 + 40, 20);
 
                                     // パーティクルを発生させる。
                                     newParticle.Play();
