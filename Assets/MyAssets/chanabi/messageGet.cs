@@ -21,6 +21,11 @@ public class MessageGet : MonoBehaviour
     int width = 300 / 20;
     int shiftPosition = 0;
 
+    [SerializeField] UnityEngine.AudioSource audioSource;
+    [SerializeField]
+    [Tooltip("打ち上げるときの音")]
+    public AudioClip audioClip;
+
     // 表示するパーティクルは外部参照
     [SerializeField]
     [Tooltip("打ち上げパーティクル")]
@@ -95,6 +100,9 @@ public class MessageGet : MonoBehaviour
                             ParticleSystem launchParticleInstantiate = Instantiate(launchParticle);
                             // パーティクルの発生場所をアタッチしているGameObjectの場所にする。x座標のみshiftPosition分ずらす。
                             launchParticleInstantiate.transform.position = new Vector3(this.transform.position.x + shiftPosition, this.transform.position.y, this.transform.position.z);
+
+                            // 打ち上げ音再生開始
+                            audioSource.PlayOneShot(audioClip);
 
                             // 打ち上げ中は待機。
                             launchParticleInstantiate.Play();
