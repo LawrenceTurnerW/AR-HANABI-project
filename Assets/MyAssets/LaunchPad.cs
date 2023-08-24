@@ -21,7 +21,6 @@ public class Timer : MonoBehaviour
             int count = Random.Range(0, particles.Length);
             span += count / 10;
             yield return new WaitForSeconds(span);
-            Debug.LogFormat("{0}秒経過", span);
             // パーティクルシステムのインスタンスを生成する。
             ParticleSystem newParticle = Instantiate(particles[count]);
             // パーティクルの発生場所をこのスクリプトをアタッチしているGameObjectの場所にする。
