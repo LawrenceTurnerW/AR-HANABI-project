@@ -157,6 +157,59 @@ Transform:
   - {fileID: 65284394}
   m_Father: {fileID: 1828601339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &44354550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44354552}
+  - component: {fileID: 44354551}
+  m_Layer: 0
+  m_Name: LaunchPad10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &44354551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44354550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  span: 9.1
+  particles:
+  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
+  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
+  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
+  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
+  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+--- !u!4 &44354552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44354550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &65284393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d9abb3264b1cc43ad36d287e50d68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 717843251}
+  audioClip: {fileID: 8300000, guid: 2af2dfd24bb6d8c4eade8f3715ebe04f, type: 3}
   launchParticle: {fileID: 8882128468511418458, guid: 69b05a824e3f7824992015d13ed47dae, type: 3}
   particle: {fileID: 4872573281758678625, guid: 9b7fb665688dc524f8d011ba91038227, type: 3}
 --- !u!4 &244432299
@@ -1299,6 +1354,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 85050636}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &302988618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302988620}
+  - component: {fileID: 302988619}
+  m_Layer: 0
+  m_Name: LaunchPad11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &302988619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302988618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  span: 7
+  particles:
+  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
+  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
+  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
+  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
+  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+--- !u!4 &302988620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302988618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &329633781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,6 +1455,59 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10, y: 0, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &360976228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360976230}
+  - component: {fileID: 360976229}
+  m_Layer: 0
+  m_Name: LaunchPad9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &360976229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360976228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  span: 6.5
+  particles:
+  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
+  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
+  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
+  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
+  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+--- !u!4 &360976230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360976228}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1942,59 +2103,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 463930439}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &969610083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 969610085}
-  - component: {fileID: 969610084}
-  m_Layer: 0
-  m_Name: LaunchPad9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &969610084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  span: 6.5
-  particles:
-  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
-  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
-  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
-  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
-  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
---- !u!4 &969610085
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1062996176
 GameObject:
@@ -2783,59 +2891,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5758995, y: 0.38105816, z: 0.10839033}
   m_Center: {x: 0.005731046, y: -0.099336326, z: -0.008123398}
---- !u!1 &1370639140
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1370639142}
-  - component: {fileID: 1370639141}
-  m_Layer: 0
-  m_Name: LaunchPad8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1370639141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370639140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  span: 8.3
-  particles:
-  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
-  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
-  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
-  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
-  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
---- !u!4 &1370639142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370639140}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 0, z: 20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489482454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,59 +3000,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20, y: 0, z: 30}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1562069058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1562069060}
-  - component: {fileID: 1562069059}
-  m_Layer: 0
-  m_Name: LaunchPad10
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1562069059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562069058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  span: 9.1
-  particles:
-  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
-  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
-  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
-  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
-  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
---- !u!4 &1562069060
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562069058}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3252,7 +3254,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1 &1793089056
+--- !u!1 &1710119733
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3260,8 +3262,114 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1793089058}
-  - component: {fileID: 1793089057}
+  - component: {fileID: 1710119735}
+  - component: {fileID: 1710119734}
+  m_Layer: 0
+  m_Name: LaunchPad13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1710119734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710119733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  span: 6.9
+  particles:
+  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
+  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
+  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
+  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
+  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+--- !u!4 &1710119735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710119733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1749865024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749865026}
+  - component: {fileID: 1749865025}
+  m_Layer: 0
+  m_Name: LaunchPad8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1749865025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749865024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  span: 8.3
+  particles:
+  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
+  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
+  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
+  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
+  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
+--- !u!4 &1749865026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749865024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1768069886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768069888}
+  - component: {fileID: 1768069887}
   m_Layer: 0
   m_Name: LaunchPad12
   m_TagString: Untagged
@@ -3269,13 +3377,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1793089057
+--- !u!114 &1768069887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793089056}
+  m_GameObject: {fileID: 1768069886}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
@@ -3290,13 +3398,13 @@ MonoBehaviour:
   - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
   - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
   - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
---- !u!4 &1793089058
+--- !u!4 &1768069888
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793089056}
+  m_GameObject: {fileID: 1768069886}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30, y: 0, z: 10}
@@ -3846,112 +3954,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 85050639}
   m_SourcePrefab: {fileID: 100100000, guid: 1f569a926254b704ea1722855c9dd4c8, type: 3}
---- !u!1 &2123584742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2123584744}
-  - component: {fileID: 2123584743}
-  m_Layer: 0
-  m_Name: LaunchPad13
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2123584743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123584742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  span: 6.9
-  particles:
-  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
-  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
-  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
-  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
-  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
---- !u!4 &2123584744
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123584742}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2126378727
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2126378729}
-  - component: {fileID: 2126378728}
-  m_Layer: 0
-  m_Name: LaunchPad11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2126378728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126378727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98391f7a8ca063c4b95424e47ba448ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  span: 7
-  particles:
-  - {fileID: 8398085266300519895, guid: 7b1681e8e276ceb479c720ac8c9f82b9, type: 3}
-  - {fileID: 8398085266300519895, guid: c70a41547986b314f861b50bca274351, type: 3}
-  - {fileID: 8398085266300519895, guid: 53d95e5186aa1844390cff201540394b, type: 3}
-  - {fileID: 8398085266300519895, guid: e1bffe8754f52a64bab8748b58d52cba, type: 3}
-  - {fileID: 8398085266300519895, guid: 895af97a21638674abc463f1bbcd3cf6, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
-  - {fileID: 8398085266300519895, guid: b3cb8fddc85af0d4b973d83e0ada5145, type: 3}
---- !u!4 &2126378729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126378727}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 0, z: 20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3971,12 +3973,12 @@ SceneRoots:
   - {fileID: 329633783}
   - {fileID: 1062996178}
   - {fileID: 1073105413}
-  - {fileID: 1370639142}
-  - {fileID: 969610085}
-  - {fileID: 1562069060}
-  - {fileID: 2126378729}
-  - {fileID: 1793089058}
-  - {fileID: 2123584744}
+  - {fileID: 1749865026}
+  - {fileID: 360976230}
+  - {fileID: 44354552}
+  - {fileID: 302988620}
+  - {fileID: 1768069888}
+  - {fileID: 1710119735}
   - {fileID: 244432299}
   - {fileID: 1985308836}
   - {fileID: 2095573482}

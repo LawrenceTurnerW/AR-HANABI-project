@@ -21,6 +21,9 @@ public class MessageGet : MonoBehaviour
     int width = 300 / 20;
     int shiftPosition = 0;
 
+    // 不具合を無理やり潰す
+    int bugFixId = -1;
+
     [SerializeField] UnityEngine.AudioSource audioSource;
     [SerializeField]
     [Tooltip("打ち上げるときの音")]
@@ -39,6 +42,7 @@ public class MessageGet : MonoBehaviour
     [System.Serializable]
     public class Body
     {
+        public int id;
         public string message;
         public string dots;
         public string color;
@@ -77,57 +81,65 @@ public class MessageGet : MonoBehaviour
                 UnityWebRequest messageRequest = UnityWebRequest.Get(webURL + message + "?time=" + oldUnixTimeMilliseconds);
                 yield return messageRequest.Send();
 
-                // 時間を次回に備えて更新
-                now = DateTime.UtcNow;
-                oldUnixTimeMilliseconds = new DateTimeOffset(now).ToUnixTimeMilliseconds();
-
                 if (messageRequest.result != UnityWebRequest.Result.ConnectionError)
                 {
                     // 空なら無視する
                     var saveData = JsonUtility.FromJson<SaveData>(messageRequest.downloadHandler.text);
                     if (saveData.body.Count != 0)
                     {
+                        // 時間を次回に備えて更新
+                        now = DateTime.UtcNow;
+                        oldUnixTimeMilliseconds = new DateTimeOffset(now).ToUnixTimeMilliseconds();
+
                         // 2次元配列から1次元配列へ変換する
                         string stringLine = saveData.body[0].dots.Replace("[", "").Replace("]", "");
-                        List<int> intList = stringLine.Split(',').ToList().Select(int.Parse).ToList();
 
-                        if (intList.Count >= 0)
+                        // 空白などを入れると配列のみ空になってエラーになるので対応
+                        if (stringLine != "")
                         {
-                            // この段階でメッセージ花火を生成することが決定したので打ち上げパーティクルを発生させる
-                            // -20 から20の間でランダムに発生場所をずらす
-                            shiftPosition = UnityEngine.Random.Range(-20, 20);
+                            List<int> intList = stringLine.Split(',').ToList().Select(int.Parse).ToList();
 
-                            ParticleSystem launchParticleInstantiate = Instantiate(launchParticle);
-                            // パーティクルの発生場所をアタッチしているGameObjectの場所にする。x座標のみshiftPosition分ずらす。
-                            launchParticleInstantiate.transform.position = new Vector3(this.transform.position.x + shiftPosition, this.transform.position.y, this.transform.position.z);
-
-                            // 打ち上げ音再生開始
-                            audioSource.PlayOneShot(audioClip);
-
-                            // 打ち上げ中は待機。
-                            launchParticleInstantiate.Play();
-                            yield return new WaitForSeconds(5.0f);
-                            for (var i = 0; i < intList.Count / 2; i++)
+                            // 連続で同じ文字が来たら排除する
+                            if (intList.Count >= 0 && bugFixId != saveData.body[0].id)
                             {
-                                // 発生させるパーティクルの色を決定
-                                ParticleSystem newParticle = Instantiate(particle);
+                                bugFixId = saveData.body[0].id;
+                                // この段階でメッセージ花火を生成することが決定したので打ち上げパーティクルを発生させる
+                                // -20 から20の間でランダムに発生場所をずらす
+                                shiftPosition = UnityEngine.Random.Range(-20, 20);
 
-                                ParticleSystem.MainModule par = newParticle.main;
-                                par.startColor = Util.HexToRGB(saveData.body[0].color);
+                                ParticleSystem launchParticleInstantiate = Instantiate(launchParticle);
+                                // パーティクルの発生場所をアタッチしているGameObjectの場所にする。x座標のみshiftPosition分ずらす。
+                                launchParticleInstantiate.transform.position = new Vector3(this.transform.position.x + shiftPosition, this.transform.position.y, this.transform.position.z);
 
-                                // パーティクルの発生場所を配列から読み取って作成する。x座標のみshiftPosition分ずらす。
-                                newParticle.transform.position = new Vector3(intList[i * 2] / 10 - width + shiftPosition, -intList[i * 2 + 1] / 10 + 40, 25);
+                                // 打ち上げ音再生開始
+                                audioSource.PlayOneShot(audioClip);
 
-                                // パーティクルを発生させる。
-                                newParticle.Play();
+                                // 打ち上げ中は待機。
+                                launchParticleInstantiate.Play();
+                                yield return new WaitForSeconds(5.0f);
+                                for (var i = 0; i < intList.Count / 2; i++)
+                                {
+                                    // 発生させるパーティクルの色を決定
+                                    ParticleSystem newParticle = Instantiate(particle);
 
-                                // インスタンス化したパーティクルシステムのGameObjectを削除する。
-                                Destroy(newParticle.gameObject, 10.0f);
+                                    ParticleSystem.MainModule par = newParticle.main;
+                                    par.startColor = Util.HexToRGB(saveData.body[0].color);
+
+                                    // パーティクルの発生場所を配列から読み取って作成する。x座標のみshiftPosition分ずらす。
+                                    newParticle.transform.position = new Vector3(intList[i * 2] / 10 - width + shiftPosition, -intList[i * 2 + 1] / 10 + 40, 25);
+
+                                    // パーティクルを発生させる。
+                                    newParticle.Play();
+
+                                    // インスタンス化したパーティクルシステムのGameObjectを削除する。
+                                    Destroy(newParticle.gameObject, 10.0f);
+                                }
                             }
                         }
+
                     }
-                    // 成功してもしなくても10秒待つ
-                    yield return new WaitForSeconds(10f);
+                    // 成功してもしなくても3秒待つ
+                    yield return new WaitForSeconds(3f);
                 }
             }
         }
